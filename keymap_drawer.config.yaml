@@ -400,7 +400,7 @@ parse_config:
       tap:  $$mdi:backspace$$
       hold: $$mdi:navigation-variant$$
     "&ltq 3 TAB":
-      tap: '$$mdi:keyboard-tab$$
+      tap: $$mdi:keyboard-tab$$
       hold: $$mdi:numeric$$
     "&ltq 2 SPACE":
       tap: $$mdi:keyboard-space$$
@@ -553,6 +553,7 @@ parse_config:
 
     LESS_THAN: <
     LT: <
+    PERIOD: '.'
     DOT:
       tap: "."
       shifted: ">"
