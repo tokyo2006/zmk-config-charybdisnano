@@ -10,15 +10,15 @@ layers:
   - I
   - O
   - {t: P, h: LG(LS(V))}
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT CONTROL}
-  - {t: F, h: LEFT SHIFT}
+  - {t: A, s: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, s: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, s: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RIGHT CONTROL}
-  - {t: L, h: RIGHT ALT}
+  - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, s: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, s: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: ':', s: ':'}
   - Z
   - X
@@ -28,14 +28,14 @@ layers:
   - N
   - M
   - {t: ',', h: <, s: <}
-  - {t: PERIOD, h: '>'}
+  - {t: ., h: '>'}
   - {t: /, h: '?', s: '?'}
-  - {t: '$$mdi:backspace$$', h: Lower}
-  - {t: '$$mdi:keyboard-tab$$', h: Shortcut}
-  - {t: '$$mdi:keyboard-space$$', h: Raise}
-  - {t: '$$mdi:keyboard-space$$', h: Raise}
-  - {t: '$$mdi:keyboard-return$$', h: Shortcut}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Lower}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:navigation-variant$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:symbol$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:numeric$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:navigation-variant$$'}
   Lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -67,12 +67,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Raise:
   - '!'
   - '@'
@@ -106,8 +106,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Shortcut:
@@ -142,10 +142,10 @@ layers:
   - F3
   - F4
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Game:
   - '1'
