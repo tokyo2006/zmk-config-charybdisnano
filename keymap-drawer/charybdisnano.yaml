@@ -9,7 +9,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: LG(LS(V))}
+  - {t: P, s: '$$mdi:content-copy$$'}
   - {t: A, s: '$$mdi:apple-keyboard-command$$'}
   - {t: S, s: '$$mdi:apple-keyboard-option$$'}
   - {t: D, s: '$$mdi:apple-keyboard-control$$'}
@@ -51,8 +51,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - VOLUME UP
-  - BRIGHTNESS INC
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -61,8 +61,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - VOLUME DOWN
-  - BRI DEC
+  - $$mdi:volume-low$$
+  - $$mdi:brightness-7$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -84,15 +84,15 @@ layers:
   - '*'
   - (
   - )
-  - ESCAPE
+  - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-caps$$
   - HOME
   - END
   - _
   - {t: '-', s: _}
-  - RIGHT SHIFT
-  - PAGE UP
-  - PAGE DOWN
+  - $$mdi:apple-keyboard-shift$$
+  - PageUp
+  - PageUp
   - {t: \, h: '|'}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - $$mdi:progress-download$$
@@ -121,20 +121,20 @@ layers:
   - '8'
   - '9'
   - '0'
-  - LG(A)
-  - LG(S)
-  - LG(D)
-  - LG(F)
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - RIGHT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - F6
   - F7
   - F8
-  - LG(Z)
-  - LG(X)
-  - LG(C)
-  - LG(V)
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - '{'
   - '}'
   - F1
@@ -153,11 +153,11 @@ layers:
   - '3'
   - '4'
   - '5'
-  - LC(RA(Y))
-  - LC(RA(U))
-  - LC(RA(I))
-  - LC(RA(H))
-  - LC(RA(J))
+  - Y
+  - U
+  - I
+  - H
+  - J
   - L
   - O
   - Y
@@ -187,23 +187,18 @@ layers:
   Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc SCRL_UP'
+  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv MOVE_UP'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -216,8 +211,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
+  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
