@@ -159,7 +159,7 @@
         Game {
             label = "Game";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LC(RA(Y))  &kp LC(RA(U))  &kp LC(RA(I))  &kp LC(RA(H))  &kp LC(RA(J))
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp Y  &kp U  &kp I  &kp H  &kp J
 &kp L         &kp O         &kp Y         &kp K         &kp G           &trans         &trans         &trans         &trans         &trans       
 &none         &to 0         &none         &kp NUMBER_6  &kp NUMBER_7    &trans         &trans         &trans         &trans         &trans        
                                    &trans        &trans        &trans          &trans         &trans  &trans
@@ -168,10 +168,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans       &trans  &trans          &mmv MOVE_UP    &trans           &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &trans          &trans          &trans           &trans       &trans  &trans          &trans          &trans           &trans
-                               &trans          &mkp LCLK           &mkp RCLK    &trans  &trans  &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans       &trans  &trans          &trans    &trans           &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans       &trans  &trans          &trans    &trans           &trans
+&trans  &trans          &trans          &trans           &trans       &trans  &trans          &trans    &trans           &trans
+                               &mkp LCLK          &mkp MCLK           &mkp RCLK    &trans  &trans  &trans
             >;
         };
     };
