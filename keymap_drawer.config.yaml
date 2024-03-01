@@ -439,19 +439,19 @@ parse_config:
       shifted: $$mdi:content-copy$$
     # Mouse
     "&msc SCRL_UP":
-      tap: $$tabler:ti-icon-arrow-big-left-line$$
+      tap: $$mdi:pan-up$$
       hold: ''
       shifted: ''
     "&msc SCRL_DOWN":
-      tap: $$tabler:ti-icon-arrow-big-right-line$$
+      tap: $$mdi:pan-down$$
       hold: ''
       shifted: ''
     "&msc SCRL_LEFT":
-      tap: $$mdi:chevron-double-left$$
+      tap: $$mdi:pan-left$$
       hold: ''
       shifted: ''
     "&msc SCRL_RIGHT":
-      tap: $$mdi:chevron-double-right$$
+      tap: $$mdi:pan-right$$
       hold: ''
       shifted: ''
     "&mkp LCLK":
