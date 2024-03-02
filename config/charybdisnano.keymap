@@ -116,7 +116,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        layer_0 {
             label = "Base";
             bindings = <
 &kp Q           &kp W           &kp E               &kp R             &kp T                     &kp Y  &kp U              &kp I                &kp O                    &hm LG(LS(V)) P
@@ -126,7 +126,7 @@
             >;
         };
 
-        Lower {
+        layer_1 {
             label = "Lower";
             bindings = <
 &trans  &trans    &kp UP        &kp EQUAL  &trans                     &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -136,7 +136,7 @@
             >;
         };
 
-        Raise {
+        layer_2 {
             label = "Raise";
             bindings = <
 &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT               &kp CARET  &kp AMPS         &kp ASTERISK  &kp LPAR                        &kp RPAR
@@ -146,7 +146,7 @@
             >;
         };
 
-        Shortcut {
+        layer_3 {
             label = "shortcut";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
