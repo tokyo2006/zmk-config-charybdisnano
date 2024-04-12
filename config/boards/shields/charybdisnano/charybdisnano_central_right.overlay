@@ -69,6 +69,7 @@
 /* e.g. SPI optical sensor for trackball */
 &pd0 {
 	status = "okay";
+    irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 	/* the rest of sensor config should be config here, e.g. gpios */
 };
 
