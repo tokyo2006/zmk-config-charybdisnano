@@ -35,32 +35,7 @@
     quick-release;
 };
 
-/ {
-	/* assign `input-listener` to all pointing devices */
-	/* &pd0 on central, &pd1 on peripheral */
 
-        trackball_central_listener {
-                compatible = "zmk,input-behavior-listener";
-                device = <&pd0>;
-                layers = <DEFAULT>;
-		        evt-type = <INPUT_EV_REL>;
-		        x-input-code = <INPUT_REL_X>;
-		        y-input-code = <INPUT_REL_Y>;
-		        scale-multiplier = <1>;
-		        scale-divisor = <1>;
-	};
-
-        trackball_peripheral_listener {
-                compatible = "zmk,input-behavior-listener";
-                device = <&pd1>;
-                layers = <DEFAULT>;
-		        evt-type = <INPUT_EV_REL>;
-		        x-input-code = <INPUT_REL_X>;
-		        y-input-code = <INPUT_REL_Y>;
-		        scale-multiplier = <1>;
-		        scale-divisor = <1>;
-	};
-}/
 
 / {
     combos {
@@ -154,6 +129,27 @@
         };
     };
 
+    trackball_central_listener {
+                compatible = "zmk,input-behavior-listener";
+                device = <&pd0>;
+                layers = <DEFAULT>;
+		        evt-type = <INPUT_EV_REL>;
+		        x-input-code = <INPUT_REL_X>;
+		        y-input-code = <INPUT_REL_Y>;
+		        scale-multiplier = <1>;
+		        scale-divisor = <1>;
+	};
+
+    trackball_peripheral_listener {
+                compatible = "zmk,input-behavior-listener";
+                device = <&pd1>;
+                layers = <DEFAULT>;
+		        evt-type = <INPUT_EV_REL>;
+		        x-input-code = <INPUT_REL_X>;
+		        y-input-code = <INPUT_REL_Y>;
+		        scale-multiplier = <1>;
+		        scale-divisor = <1>;
+	};
     keymap {
         compatible = "zmk,keymap";
 
