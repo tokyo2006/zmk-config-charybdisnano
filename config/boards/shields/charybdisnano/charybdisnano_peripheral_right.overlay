@@ -25,6 +25,14 @@
 /* enable &pd0 on split peripheral. typical input device for zephyr input subsystem. */
 /* NOTE 1: use the same device alias (&pd0) on central and peripheral(s) is alright. */
 /* NOTE 2: input event shall be intecepted by module `zmk-split-peripheral-input-relay`. */
+&spi2 {
+  status = "okay";
+	pinctrl-0 = <&spi2_default>;
+	pinctrl-1 = <&spi2_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+};
+
 &pd0 {
   status = "okay";
   irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
