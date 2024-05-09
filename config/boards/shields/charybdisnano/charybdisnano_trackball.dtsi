@@ -28,6 +28,17 @@
 &uart0 {
 	status = "disabled";
 };
+&spi2 {
+	compatible = "nordic,nrf-spim";
+	status = "disabled"; // <<< disabled in main .dtsi, okay in .overlay
+	pd0: pd@0 {
+		compatible = "pixart,pmw3610";
+		status = "disabled";
+		label = "TRACKBALL0";
+		reg = <0>;
+		spi-max-frequency = <4000000>;
+	};
+};
 
 // Config custom gpios
 &spi2 {
