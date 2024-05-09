@@ -36,12 +36,12 @@
 
 / {
 	/* for central side, define (relay-channel)-to-(virtual-input) mapping */
-	input_relay_config_102 {
+	input_relay_config_104 {
 		compatible = "zmk,split-peripheral-input-relay";
 		
 		/* channel id, used to filter incoming annotated input event from split peripheral */
 		/* NOTE: should matching relay-channel on peripheral overlay */
-		relay-channel = <102>;
+		relay-channel = <104>;
 
 		/* virtual input device on central, which used to emit input event as an agent device */
 		device = <&pd1>;
