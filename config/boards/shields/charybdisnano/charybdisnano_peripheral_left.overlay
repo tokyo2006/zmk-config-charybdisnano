@@ -42,7 +42,7 @@
 
 / {
 	/* for peripheral side, define (input-device)-to-(relay-channel) mapping */
-	input_relay_config_103 {
+	input_relay_config_102 {
 		compatible = "zmk,split-peripheral-input-relay";
 
 		/* peripheral side input device, used to be intecepted and be resurrected on central */
@@ -50,7 +50,7 @@
 		
 		/* channel id, used to annotate raw input event */
 		/* NOTE: should matching relay-channel on central overlay */
-		relay-channel = <103>;
+		relay-channel = <102>;
 	};
 };
 
