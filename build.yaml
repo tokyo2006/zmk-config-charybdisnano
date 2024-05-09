@@ -17,8 +17,8 @@ include:
     shield: charybdisnano_central_dongle dongle_display
     artifact-name: charybdisnano_central_dongle
   - board: nice_nano_v2
-    shield: charybdisnano_central_right
-    artifact-name: charybdisnano_central_right
+    shield: charybdisnano_central_left
+    artifact-name: charybdisnano_central_left
   - board: nice_nano_v2
     shield: charybdisnano_peripheral_left
     artifact-name: charybdisnano_peripheral_left
