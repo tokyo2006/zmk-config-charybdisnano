@@ -55,7 +55,7 @@
   /*};*/
 
   trackball_peripheral_listener {
-                compatible = "zmk,input-listener";
+                compatible = "zmk,input-behavior-listener";
                 device = <&pd1>;
                 layers = <5>;
 		        evt-type = <INPUT_EV_REL>;
