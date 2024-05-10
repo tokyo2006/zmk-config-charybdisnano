@@ -121,6 +121,13 @@
 	};
 };
 
+/{
+  trackball_listener { 
+    compatible = "zmk,input-listener";
+    device = <&pd1>;
+  };
+};
+
 &pro_micro_i2c {
     status = "okay";
     oled: sh1106@3c {
