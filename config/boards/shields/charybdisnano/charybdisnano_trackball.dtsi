@@ -69,4 +69,12 @@
 	evt-type = <INPUT_EV_REL>;
 	x-input-code = <INPUT_REL_X>;
 	y-input-code = <INPUT_REL_Y>;
+}
+
+/ {
+	/* define virtual input, will be resurrected for emitting input event */
+	/* NOTE: set `device = <&pd1>` in `zmk,input-listener` */
+	pd1: virtual_input {
+		compatible = "zmk,virtual-input";
+	};
 };
