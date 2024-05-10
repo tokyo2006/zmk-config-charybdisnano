@@ -140,7 +140,12 @@
 		        scale-divisor = <1>;
                 bindings = <&ib_tog_layer MOUSE>;
 	};
-
+    
+    ib_tog_layer: ib_tog_layer {
+                compatible = "zmk,input-behavior-tog-layer";
+                #binding-cells = <1>;
+                time-to-live-ms = <1000>;
+        };
     keymap {
         compatible = "zmk,keymap";
 
