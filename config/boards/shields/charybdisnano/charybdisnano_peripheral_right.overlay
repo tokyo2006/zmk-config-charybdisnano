@@ -65,6 +65,7 @@
     device = <&pd0>;
   };
 };
+
 #define INPUT_EV_KEY 0x01               /**< Key event */
 #define INPUT_EV_REL 0x02               /**< Relative coordinate event */
 #define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
