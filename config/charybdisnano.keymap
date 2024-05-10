@@ -129,6 +129,17 @@
         };
     };
 
+  trackball_peripheral_listener {
+                compatible = "zmk,input-behavior-listener";
+                device = <&pd1>;
+                layers = <5>;
+		        evt-type = <INPUT_EV_REL>;
+		        x-input-code = <INPUT_REL_X>;
+		        y-input-code = <INPUT_REL_WHEEL>;
+		        scale-multiplier = <1>;
+		        scale-divisor = <1>;
+	};
+    
     keymap {
         compatible = "zmk,keymap";
 
