@@ -49,10 +49,10 @@
 };
 
 / {
-  /*trackball_listener { /*
-  /*  compatible = "zmk,input-listener";/*
-  /*  device = <&pd1>;/*
-  /*};/*
+  /*trackball_listener { */
+  /*  compatible = "zmk,input-listener";*/
+  /*  device = <&pd1>;*/
+  /*};*/
 
   trackball_peripheral_listener {
                 compatible = "zmk,input-behavior-listener";
