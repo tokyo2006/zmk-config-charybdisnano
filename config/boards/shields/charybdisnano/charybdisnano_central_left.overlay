@@ -65,7 +65,7 @@
   trackball_peripheral_auto_mouse_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&pd1>;
-        layers = <0 1 2 3 4>;
+        layers = <0>;
 		evt-type = <INPUT_EV_REL>;
 		x-input-code = <INPUT_REL_X>;
 		y-input-code = <INPUT_REL_WHEEL>;
