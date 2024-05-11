@@ -75,9 +75,9 @@
            
            /* slienting x-axis with alt event code */
            x-input-code = <INPUT_REL_HWHEEL>;
-           y-input-code = <INPUT_REL_WHEEL>   
+           y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
-           y-invert   
+           y-invert;
            /* align to CCW 45 degree */
            rotate-deg = <315>;
            /* NOTE 1: This settings do not compitable with y-invert and x-invert */
@@ -99,9 +99,9 @@
            
            /* slienting x-axis with alt event code */
            x-input-code = <INPUT_REL_MISC>;
-           y-input-code = <INPUT_REL_WHEEL>   
+           y-input-code = <INPUT_REL_WHEEL>;
            /* invent scrolling direction */
-           y-invert   
+           y-invert;
            /* align to CCW 45 degree */
            rotate-deg = <315>;
    };
@@ -110,7 +110,7 @@
    ib_tog_layer: ib_tog_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
-        time-to-live-ms = <1000>;
+        time-to-live-ms = <500>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
