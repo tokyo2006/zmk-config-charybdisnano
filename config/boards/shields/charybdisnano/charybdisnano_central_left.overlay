@@ -65,7 +65,7 @@
   trackball_peripheral_auto_mouse_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&pd1>;
-        layers = <1 2 3 4>;
+        layers = <0 1 2 3 4>;
 		evt-type = <INPUT_EV_REL>;
 		x-input-code = <INPUT_REL_X>;
 		y-input-code = <INPUT_REL_WHEEL>;
@@ -118,7 +118,7 @@
    ib_tog_layer: ib_tog_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
-        time-to-live-ms = <500>;
+        time-to-live-ms = <2000>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
