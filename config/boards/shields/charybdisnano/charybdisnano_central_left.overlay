@@ -66,11 +66,11 @@
         compatible = "zmk,input-behavior-listener";
         device = <&pd1>;
         layers = <0>;
-		evt-type = <INPUT_EV_REL>;
-		x-input-code = <INPUT_REL_X>;
-		y-input-code = <INPUT_REL_WHEEL>;
-		scale-multiplier = <1>;
-		scale-divisor = <1>;
+	evt-type = <INPUT_EV_REL>;
+	x-input-code = <INPUT_REL_X>;
+	y-input-code = <INPUT_REL_WHEEL>;
+	scale-multiplier = <1>;
+	scale-divisor = <1>;
         bindings = <&ib_tog_layer 5>;
    };
 
@@ -106,6 +106,7 @@
           y-input-code = <INPUT_REL_Y>;
           scale-multiplier = <1>;
           scale-divisor = <1>;
+          y-invert;
           rotate-deg = <315>;
           bindings = <&ib_snipe_scaler 1 8>;
    };
@@ -119,16 +120,16 @@
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
     ib_wheel_scaler: ib_wheel_scaler {
-            compatible = "zmk,input-behavior-scaler";
-            #binding-cells = <2>;
-            evt-type = <INPUT_EV_REL>;
-            input-code = <INPUT_REL_WHEEL>;
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_WHEEL>;
     };
 
     ib_snipe_scaler: ib_snipe_scaler {
-            compatible = "zmk,input-behavior-scaler";
-            #binding-cells = <3>;
-            evt-type = <INPUT_EV_REL>;
-            input-code = <INPUT_REL_MISC>;
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <3>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_MISC>;
     };
 };
