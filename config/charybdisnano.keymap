@@ -140,8 +140,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
-            label = "Base";
+        Qwery {
+            label = "Qwery";
             bindings = <
 &kp Q           &kp W           &kp E               &kp R             &kp T                     &kp Y  &kp U              &kp I                &kp O                    &hm LG(LS(V)) P
 &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G                     &kp H  &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L          &as COLON SEMICOLON
@@ -150,18 +150,18 @@
             >;
         };
 
-        layer_1 {
-            label = "Lower";
+        Navi {
+            label = "navi";
             bindings = <
-&dongle_bootload_macro  &trans     &kp UP     &kp EQUAL  &trans                     &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans                  &kp LEFT   &kp DOWN   &kp RIGHT  &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &bt BT_CLR    &trans        &trans        &trans
-&out OUT_TOG            &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp C_VOLUME_DOWN          &kp C_BRI_DEC         &trans        &trans        &trans        &trans
-                                              &trans     &trans             &trans                        &trans        &trans        &trans
+&dongle_bootload_macro  &trans    &kp UP    &kp EQUAL  &trans                     &trans                &trans     &trans     &trans     &trans
+&trans                  &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&out OUT_TOG            &trans    &trans    &trans     &kp C_VOLUME_DOWN          &kp C_BRI_DEC         &trans     &trans     &trans     &trans
+                                            &trans     &trans             &trans                        &trans     &trans     &trans
             >;
         };
 
-        layer_2 {
-            label = "Raise";
+        Symbol {
+            label = "Symbol";
             bindings = <
 &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT               &kp CARET  &kp AMPS         &kp ASTERISK  &kp LPAR                        &kp RPAR
 &kp ESCAPE    &kp CAPSLOCK  &kp HOME  &kp END   &kp UNDERSCORE          &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP   &kp PAGE_DOWN                   &as PIPE NON_US_BACKSLASH
@@ -170,23 +170,23 @@
             >;
         };
 
-        layer_3 {
-            label = "shortcut";
+        Modifer {
+            label = "Modifer";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp F6        &kp F7        &kp F8
-&kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE            &kp RIGHT_BRACE    &kp F1           &kp F2        &kp F3        &kp F4
-                                          &trans        &trans            &trans                     &trans           &trans        &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp F8
+&kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE            &kp RIGHT_BRACE    &kp F1        &kp F2        &kp F3        &kp F4
+                                          &trans        &trans            &trans                     &trans        &trans        &trans
             >;
         };
 
-        Game {
-            label = "Game";
+        Flash {
+            label = "Flash";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5          &kp Y   &kp U   &kp I   &kp H   &kp J
-&kp L         &kp O         &kp Y         &kp K         &kp G                 &trans  &trans  &trans  &trans  &trans
-&none         &to 0         &none         &kp NUMBER_6  &kp NUMBER_7          &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans          &trans  &trans  &trans
+&dongle_bootload_macro  &trans  &trans  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans                  &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
+&none                   &trans  &none   &trans  &trans          &trans        &trans        &trans        &trans        &bt BT_CLR
+                                        &trans  &trans  &trans                &trans        &trans        &trans
             >;
         };
 
@@ -197,6 +197,15 @@
 &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans          &trans  &trans     &trans     &trans     &trans
                                         &trans           &trans  &trans          &trans     &trans     &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Flash {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
