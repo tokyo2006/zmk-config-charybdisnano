@@ -12,3 +12,4 @@ config SHIELD_CHARYBDISNANO_PERIPHERAL_LEFT
 
 config SHIELD_CHARYBDISNANO_PERIPHERAL_RIGHT
     def_bool $(shields_list_contains,charybdisnano_peripheral_right)
+ 
